@@ -1,7 +1,7 @@
 # pico
 android multiple images and video picker.
 
-### Installation
+## Installation
 ### add these lines to build.gradle
 ```
 repositories {
@@ -18,16 +18,16 @@ dependencies {
 ```
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
-
-## Open multiple images
+## Usage
+### Open multiple images
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
-## Open multiple videos
+### Open multiple videos
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 ```
-## onActivityResult
+### onActivityResult
 ```
 @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
