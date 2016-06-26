@@ -10,13 +10,12 @@ repositories {
     }
 }
 dependencies {
-    compile 'com.github.farhanahmed95:httpfilerequest:0.0.3@aar'
+    compile 'com.github.farhanahmed95:pico:0.0.1@aar'
 }
 
 ```
 ### add permissions to AndroidManifest.xml
 ```
-<uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
 
