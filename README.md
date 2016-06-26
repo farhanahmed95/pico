@@ -1,5 +1,25 @@
 # pico
 android multiple images and video picker.
+
+### Installation
+### add these lines to build.gradle
+```
+repositories {
+    maven {
+        url 'https://dl.bintray.com/farhanahmed95/maven/'
+    }
+}
+dependencies {
+    compile 'com.github.farhanahmed95:httpfilerequest:0.0.3@aar'
+}
+
+```
+### add permissions to AndroidManifest.xml
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+```
+
 ## Open multiple images
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
