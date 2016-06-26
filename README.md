@@ -2,14 +2,15 @@
 android multiple images and video picker.
 ## Open multiple images
 ```
-    Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
+Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
 ## Open multiple videos
-    Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
-    
+```
+Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
+```
 ## onActivityResult
 ```
-    @Override
+@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
