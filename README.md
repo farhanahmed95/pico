@@ -27,7 +27,7 @@ Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 ```
-### Add this in <code>protected void onActivityResult(int requestCode, int resultCode, Intent data)</code  method of Activity
+### Add this in ```protected void onActivityResult(int requestCode, int resultCode, Intent data)```  method of Activity
 ```
 Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
 
