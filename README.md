@@ -27,9 +27,11 @@ Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 ```
-### Add this in ```protected void onActivityResult(int requestCode, int resultCode, Intent data)```  method of Activity
+### Override onActivityResult method
 ```
-Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
 
             @Override
             public void onActivityResult(List<File> files) {
@@ -44,6 +46,7 @@ Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResult
 
             }
         });
+}
 ```
 <br />
 <br />
