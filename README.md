@@ -27,13 +27,9 @@ Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 ```
-### onActivityResult
+### On Activity Result
 ```
-@Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
+Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
 
             @Override
             public void onActivityResult(List<File> files) {
@@ -48,5 +44,20 @@ Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 
             }
         });
-    }
 ```
+<br />
+<br />
+<br />
+Copyright 2016 Farhan Ahmed
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
