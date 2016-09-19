@@ -20,15 +20,15 @@ dependencies {
 ```
 ## Usage
 ### Open multiple images
-```
+```java
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_IMAGE);
 ```
 ### Open multiple videos
-```
+```java
 Pico.openMultipleFiles(MainActivity.this,Pico.TYPE_VIDEO);
 ```
 ### Override onActivityResult method
-```
+```java
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     Pico.onActivityResult(this,requestCode,resultCode,data,new Pico.onActivityResultHandler(){
